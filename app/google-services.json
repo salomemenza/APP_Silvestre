@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "305454791294",
+    "project_id": "grupo-silvestre-app",
+    "storage_bucket": "grupo-silvestre-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305454791294:android:7b697158d2c10cbbbbb62f",
+        "android_client_info": {
+          "package_name": "com.example.erp_mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305454791294-jkfen16k6u5n308vlo814qvggpl7t9he.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7NfCxpKM743BsL5VHKEe-2AHI4TBOGoE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305454791294-jkfen16k6u5n308vlo814qvggpl7t9he.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305454791294:android:f5f580c04dcab392bbb62f",
+        "android_client_info": {
+          "package_name": "com.silvestre.erp_mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305454791294-jkfen16k6u5n308vlo814qvggpl7t9he.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7NfCxpKM743BsL5VHKEe-2AHI4TBOGoE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305454791294-jkfen16k6u5n308vlo814qvggpl7t9he.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

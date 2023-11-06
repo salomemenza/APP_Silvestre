@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+
+    <TextView
+        android:id="@+id/txtcantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:text="CANTIDAD"
+
+
+        />
+
+    <EditText
+        android:id="@+id/plantilla_alertdialog_cantidadpedido_txtcantidad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtcantidad"
+        android:gravity="fill"
+        android:inputType="numberDecimal"
+
+        />
+
+
+
+    <Button
+        android:id="@+id/plantilla_alertdialog_cantidadpedido_btnCantidad"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plantilla_alertdialog_cantidadpedido_txtcantidad"
+        android:text="Ok"
+        android:textColor="@color/olx" />
+</RelativeLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borde_lista1"
+        android:layout_margin="5dp"
+
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/plantilla_dVencida_txtnumerocliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="461199599"
+                    />
+                <TextView
+                    android:id="@+id/plantilla_dVencida_txtcodigocliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="461199599"
+                    />
+
+                <TextView
+                    android:id="@+id/plantilla_dVencida_txtnombrecliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Procampo SA"
+                    android:textColor="@color/azulOscuro"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:text="Linea : "
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/plantilla_dVencida_txtlineacredito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="1,000.00"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.04"
+                    android:textSize="12dp"
+                    android:textColor="@color/azulOscuro"
+                    android:text="8 Dias XVenc.:" />
+
+                <TextView
+                    android:id="@+id/plantilla_dVencida_txt8diasxvencer"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="12dp"
+                    android:text="751,000.78" />
+
+                <TextView
+
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:textSize="12dp"
+
+                    android:textColor="@color/azulOscuro"
+                    android:text="0 Dias XVenc.:" />
+
+                <TextView
+                    android:id="@+id/plantilla_dVencida_txt0diasxvencer"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="12dp"
+                    android:text="751,000.78" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.04"
+                    android:textSize="12dp"
+                    android:textColor="@color/azulOscuro"
+                    android:text="5 Dias Venc.:  " />
+
+                <TextView
+                    android:id="@+id/plantilla_dVencida_txt5diasvencidos"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:text="751,000.78" />
+
+
+                <TextView
+
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:textSize="12dp"
+                    android:textColor="@color/azulOscuro"
+                    android:text="8 Dias Venc.:" />
+
+                <TextView
+                    android:id="@+id/plantilla_dVencida_txt8diasvencidos"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:text="751,000.78" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.04"
+                    android:textSize="12dp"
+                    android:textColor="@color/azulOscuro"
+                    android:text="25 Dias Venc.:" />
+
+                <TextView
+                    android:id="@+id/plantilla_dVencida_txt25diasvencidos"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:text="751,000.78" />
+
+
+                <TextView
+
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:textSize="12dp"
+                    android:textColor="@color/azulOscuro"
+                    android:text="40 Dias Venc.:" />
+
+                <TextView
+                    android:id="@+id/plantilla_dVencida_txt40diasvencidos"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:text="751,000.78" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

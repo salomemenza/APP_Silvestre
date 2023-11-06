@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:background="@color/colorPrimary"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        app:srcCompat="@drawable/nav_icon" />
+
+    <TextView
+        android:id="@+id/nav_header_txtempresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nav_header_empresa"
+        android:textColor="@color/white"
+        android:textSize="11sp"/>
+
+    <TextView
+        android:id="@+id/nav_header_txtusuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE APELLIDO"
+        android:paddingTop="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+
+    <TextView
+        android:id="@+id/nav_header_txtperfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nav_header_subtitle"
+        android:textColor="@color/white"
+        android:textSize="12sp"/>
+
+
+
+
+
+    <!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:contentDescription="@string/nav_header_desc"-->
+<!--            android:paddingTop="@dimen/nav_header_vertical_spacing"-->
+<!--            app:srcCompat="@drawable/customer_x48" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/nav_header_txtempresa"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:gravity="center"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:text="@string/nav_header_empresa"-->
+<!--            android:textColor="@color/blanco"-->
+<!--            android:textSize="15dp"-->
+<!--            android:textStyle="bold" />-->
+<!--    </LinearLayout>-->
+
+<!--    <TextView-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:paddingTop="@dimen/nav_header_vertical_spacing"-->
+<!--        android:text="@string/nav_header_title2"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+<!--        android:textColor="@color/blanco"-->
+<!--        android:textSize="16dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/nav_header_txtusuario"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:paddingTop="@dimen/nav_header_vertical_spacing"-->
+<!--        android:text="@string/nav_header_title"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+<!--        android:textColor="@color/blanco"-->
+<!--        android:textSize="16dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/nav_header_txtcorreo"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/nav_header_subtitle"-->
+<!--        android:textColor="@color/blanco"-->
+<!--        android:textSize="15dp" />-->
+
+</LinearLayout>

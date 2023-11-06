@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+<!--        <item-->
+<!--            android:id="@+id/nav_home"-->
+<!--            android:icon="@drawable/nav_home"-->
+<!--            android:title="Inicio"/>-->
+
+        <item
+            android:id="@+id/nav_qr"
+            android:icon="@drawable/nav_qr"
+            android:title="Escanear QR"/>
+
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/nav_message"
+            android:title="Envar SMS"/>
+
+        <item
+            android:id="@+id/nav_letras"
+            android:icon="@drawable/nav_crop"
+            android:title="Seguimiento Letras"/>
+
+    </group>
+
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/nav_logout"
+                android:title="Cerrar Sesion"/>
+        </menu>
+    </item>
+
+<!--        <item-->
+<!--            android:id="@+id/nav_home"-->
+<!--            android:icon="@drawable/ic_menu_camera"-->
+<!--            android:title="@string/menu_productos" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_cargarapp"-->
+<!--            android:icon="@drawable/ic_menu_send"-->
+<!--            android:title="@string/menu_enviosms"-->
+<!--            android:visible="false" />-->
+
+
+
+<!--    <item android:title="Contactar y Comprar">-->
+<!--        <menu>-->
+
+<!--        </menu>-->
+<!--    </item>-->
+
+</menu>

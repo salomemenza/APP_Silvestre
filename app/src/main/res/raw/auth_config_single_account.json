@@ -1,0 +1,16 @@
+{
+  "client_id" : "adcb3731-b37f-4670-803f-272658e473e5",
+  "authorization_user_agent" : "DEFAULT",
+  "redirect_uri" : "msauth://com.silvestre.erp_mobile/8n3nDFWv%2BykFHQxyGIuLWCfELxY%3D",
+  "broker_redirect_uri_registered": true,
+  "account_mode": "SINGLE",
+  "authorities" : [
+    {
+      "type": "AAD",
+      "audience": {
+        "type": "AzureADMyOrg",
+        "tenant_id": "699a08c1-7e2d-4035-97d8-6a4efa4bd1f3"
+      }
+    }
+  ]
+}

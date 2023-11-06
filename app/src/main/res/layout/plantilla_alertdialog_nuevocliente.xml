@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+
+    <TextView
+        android:id="@+id/txtruc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:text="RUC "
+
+
+        />
+
+    <EditText
+        android:id="@+id/plantilla_alertdialog_nuevocliente_txtruc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtruc"
+        android:gravity="fill"
+        android:inputType="number"
+
+        />
+
+    <TextView
+        android:id="@+id/txtnombrecliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plantilla_alertdialog_nuevocliente_txtruc"
+        android:text="NOMBRE"
+        android:textColor="@color/gray" />
+
+    <EditText
+        android:id="@+id/plantilla_alertdialog_nuevocliente_txtnombre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtnombrecliente" />
+    <TextView
+        android:id="@+id/txtdireccioncliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:text="DIRECCION :"
+        android:layout_below="@id/plantilla_alertdialog_nuevocliente_txtnombre"
+        />
+    <EditText
+        android:id="@+id/plantilla_alertdialog_nuevocliente_txtdireccion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtdireccioncliente"
+        android:maxLines="4"
+        android:lines="4"
+        />
+
+
+    <Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plantilla_alertdialog_nuevocliente_txtdireccion"
+        android:text="Ok"
+        android:textColor="@color/olx" />
+</RelativeLayout>

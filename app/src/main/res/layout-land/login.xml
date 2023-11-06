@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    >
+
+
+        <LinearLayout
+            android:id="@+id/cuadro1"
+            android:orientation="vertical"
+            android:layout_width="200dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/login_background4_2"
+                />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cuadro2"
+        android:layout_width="400dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+
+
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/cuadro1"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingTop="50dp"
+            android:paddingRight="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/txtNombreEmpresa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/borde_textbox_login"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint="Empresa"
+
+                    android:inputType="textPersonName"
+                    android:text="SILVESTRE" />
+
+                <EditText
+                    android:id="@+id/txtusuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/borde_textbox_login"
+                    android:gravity="center"
+                    android:hint="Usuario"
+                    android:inputType="textPersonName"
+                    android:paddingRight="20dp" />
+
+                <EditText
+                    android:id="@+id/txtcontraseña"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/borde_textbox_login"
+                    android:gravity="center"
+                    android:hint="Password"
+                    android:inputType="textPersonName|textPassword"
+                    android:paddingRight="20dp"
+                    android:password="true" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+
+            <Button
+                android:id="@+id/btningresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde_boton_login"
+                android:gravity="center"
+                android:text="Ingresar"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btninvitado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/borde_boton_login"
+                android:gravity="center"
+                android:text="Invitado"
+                android:textColor="#FFFFFF"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment_enviosms">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enviosms_fila0"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enviosms_columna1"
+        android:orientation="vertical"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/enviosms_fila1"
+            android:layout_marginTop="5dp"
+            >
+
+            <EditText
+                android:id="@+id/enviosms_txtzona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:focusable="false"
+
+                android:inputType="textPersonName"
+                android:text="TODO" />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/enviosms_fila2"
+            android:layout_below="@id/enviosms_fila1"
+            >
+
+            <EditText
+                android:id="@+id/enviosms_txtcliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:focusable="true"
+                android:hint="Ingrese el Cliente"
+                android:inputType="textPersonName" />
+
+            <ImageButton
+                android:id="@+id/enviosms_btnbuscar"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.2"
+                android:src="@android:drawable/ic_menu_search" />
+            <ImageButton
+                android:id="@+id/enviosms_btnenviar"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.2"
+                android:src="@android:drawable/ic_menu_send" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/enviosms_fila0"
+        android:layout_above="@id/division3"
+        >
+
+        <ListView
+            android:id="@+id/enviosms_lvwdeudas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="2.5sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/division3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/azulOscuro"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:textColor="@color/yellow"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="DIAS -8: "
+                />
+
+            <TextView
+                android:id="@+id/enviosms_txtporvencer8"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5sp"
+                android:layout_weight="1"
+                android:text="0.00"
+                android:textAlignment="textEnd"
+                android:textSize="13sp"
+                android:textColor="@color/blanco"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="DIAS 0: "
+                android:textColor="@color/yellow"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/enviosms_txtporvencer0"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5sp"
+                android:layout_weight="1"
+                android:text="0.00"
+                android:textAlignment="textEnd"
+                android:textSize="13sp"
+                android:textColor="@color/blanco"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:textColor="@color/yellow"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="DIAS 5  : "
+                />
+
+            <TextView
+                android:id="@+id/enviosms_txtvencido5"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5sp"
+                android:layout_weight="1"
+                android:text="0.00"
+                android:textAlignment="textEnd"
+                android:textSize="13sp"
+                android:textColor="@color/blanco"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="DIAS 8: "
+                android:textColor="@color/yellow"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/enviosms_txtvencido8"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5sp"
+                android:layout_weight="1"
+                android:text="0.00"
+                android:textAlignment="textEnd"
+                android:textSize="13sp"
+                android:textColor="@color/blanco"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+</FrameLayout>
