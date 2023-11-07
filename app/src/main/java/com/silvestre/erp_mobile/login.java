@@ -10,6 +10,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
 import android.content.res.Configuration;
+import android.media.Image;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -95,7 +96,7 @@ public class login extends AppCompatActivity {
     private ISingleAccountPublicClientApplication mSingleAccountApp;
     private IAccount mAccount;
 
-    private Button btnMs;
+    private ImageButton btnMs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,7 +113,7 @@ public class login extends AppCompatActivity {
 
         txtEmpresa = (EditText) findViewById(R.id.txtNombreEmpresa);
         //txtEmpresa.setInputType(InputType.TYPE_NULL);
-        btnMs = (Button) findViewById(R.id.btnMs);
+        btnMs = (ImageButton) findViewById(R.id.btnMs);
 
 
         btningresar.setOnClickListener(new View.OnClickListener() {
@@ -212,6 +213,11 @@ public class login extends AppCompatActivity {
                     return;
                 }
 
+                /*progressDialog = new ProgressDialog(this);
+                progressDialog.show();
+                progressDialog.setContentView(R.layout.progress_bar_personalizado);
+                progressDialog.show();*/
+
                 mSingleAccountApp.signIn(login.this, null, getScopes(), getAuthInteractiveCallback());
             }
         });
@@ -249,14 +255,16 @@ public class login extends AppCompatActivity {
 
                 /* Update account */
                 mAccount = authenticationResult.getAccount();
-//                updateUI();
+                Log.d(TAG, "Expire Token: " + authenticationResult.getExpiresOn());
 
                 /* call graph */
-//                callGraphAPI(authenticationResult);
+                callGraphAPI(authenticationResult);
             }
 
             @Override
             public void onError(MsalException exception) {
+                //progressDialog.dismiss();
+
                 /* Failed to acquireToken */
                 Log.d(TAG, "Authentication failed: " + exception.toString());
 //                displayError(exception);
@@ -272,9 +280,48 @@ public class login extends AppCompatActivity {
             @Override
             public void onCancel() {
                 /* User canceled the authentication */
+                //progressDialog.dismiss();
                 Log.d(TAG, "User cancelled login.");
             }
         };
+    }
+
+    private void callGraphAPI(final IAuthenticationResult authenticationResult) {
+        Log.d(TAG, "getAccessToken: " + authenticationResult.getAccessToken());
+        MSGraphRequestWrapper.callGraphAPIUsingVolley(
+                getApplicationContext(),
+                authenticationResult.getAccessToken(),
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        /* Successfully called graph, process data and send to UI */
+                        Log.d(TAG, "Response: " + response.toString());
+                        //progressDialog.dismiss();
+
+                        try {
+                            JSONObject obj = new JSONObject(response.toString());
+                            variables_globales.LOGIN_PERFIL = obj.getString("mail");
+                            variables_globales.LOGIN_NRODNI = "47256488";
+                            variables_globales.LOGIN_NOMBREUSUARIO = obj.getString("displayName");
+                            variables_globales.LOGIN_USUARIO = obj.getString("displayName");
+                            variables_globales.LOGIN_IDEMPRESA = "1";
+                        } catch (JSONException e) {
+                            throw new RuntimeException(e);
+                        }
+                        //displayGraphResult(response);
+                        //Realizar cierta accion
+                        login();
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        //progressDialog.dismiss();
+                        Log.d(TAG, "Error: " + error.toString());
+                        //displayError(error);
+                        Toast.makeText(login.this, error.getMessage(), Toast.LENGTH_LONG).show();
+                    }
+                });
     }
 
     private void loadAccount() {
@@ -287,7 +334,6 @@ public class login extends AppCompatActivity {
             public void onAccountLoaded(@Nullable IAccount activeAccount) {
                 // You can use the account data to update your UI or your app database.
                 mAccount = activeAccount;
-                //updateUI();
             }
 
             @Override
@@ -548,7 +594,7 @@ public class login extends AppCompatActivity {
     public void onLoginSuccess() {
         btningresar.setEnabled(true);
         //public static final String LOGIN_USUARIO=txtusuario.toString().toUpperCase();
-        variables_globales.LOGIN_USUARIO = txtusuario.getText().toString().toUpperCase();
+        //variables_globales.LOGIN_USUARIO = txtusuario.getText().toString().toUpperCase();
 
         Intent intento = new Intent(login.this, MainActivity.class);
         //startActivityForResult(intento,REQUEST_SIGNUP);

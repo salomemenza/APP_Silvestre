@@ -124,13 +124,12 @@
                 android:orientation="horizontal"
                 android:gravity="center">
 
-                <Button
+                <ImageButton
                     android:id="@+id/btnMs"
-                    android:layout_width="127dp"
+                    android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_margin="12dp"
-                    android:src="@drawable/logo_ms"
-                    android:text="Click Me" />
+                    android:src="@drawable/logo_ms" />
 
 
 
